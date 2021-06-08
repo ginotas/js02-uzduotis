@@ -28,7 +28,7 @@ Papildoma:
 
 
 
-Site published at https://ginotas.github.io/3-mergaite/
+Site published at https://ginotas.github.io/js02-uzduotis/
 
 
 ## Project features
