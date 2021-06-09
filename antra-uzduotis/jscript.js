@@ -1,17 +1,19 @@
 "use strict"
 
-console.log("hello");
+console.log("hello hell");
 
 // 1. Suprogramuokite skriptą, kurioje parašius tam tikrą sekundžių kiekį, 
 // rodo  24 valandų, minučių, sekundžių formatu.
 
-/*  nesigauna ideti i
+/*  nesigauna ideti / paimti is html 
 function myFunction() {
     document.getElementById("sekundesx").value;
-    document.getElementById("rezultatas").innerHTML = ("valandos: " + valandos + " minutes: " + minutes + " sekundes: " +sekundes);;
+    document.getElementById("rezultatas").innerHTML = ("valandos: " + valandos + " minutes: " + minutes + " sekundes: " +sekundes);
   }
-  let sekundesx = document.getElementById("sekundesx").value;
+ 
 */
+
+
 
 let sekundesx = 1000;
 let valandos = Math.floor(sekundesx / 3600);
@@ -56,7 +58,7 @@ console.log("triju skaiciu sumos vidurkis yra: " + avg);
 
 
 
-//kvadratine lygtis
+// 3. Sukurkite  skriptą, kuris suranda kvadratinės lygties sprendimą.
 
 /*
 var a, b, c;

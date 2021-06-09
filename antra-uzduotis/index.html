@@ -7,14 +7,17 @@
     <title>antra uzduotos</title>
 </head>
 <body>
-    <div>
-        <label for="laikas">iveskite norima sekundziu kieki:</label>
-        <input type="number" id="sekundesx">
-        <p>spauskite mygtuka</p>
-        <button onclick="myFunction()">click</button>
-        <p id="rezultatas"></p>
-    </div>
-   
+    <form>
+        Iveskite norima sekundziu kieki:
+        <input id="sekundesx" type="number" onsubmit="myFunction()">
+        <br>
+        <button type="submit">paspausk</button>
+        <br>
+        Sekundes paverstos valandomis, minutemis ir sekundemis:
+        <input type="text" id="rezultatas">
+    </form>
+
     <script src="jscript.js"></script>
+
 </body>
 </html>
