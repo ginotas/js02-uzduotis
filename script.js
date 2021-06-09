@@ -60,4 +60,15 @@ var skaicius6;
 skaicius5 = 5;
 skaicius6 = 6;
 
-//
+// 2. Sukeisti kinamųju reikšmes skaicius5 ir skaicius6 pasitelkiant XOR operatorių.
+
+skaicius5 = skaicius5 ^ skaicius6;
+skaicius6 = skaicius5 ^ skaicius6;
+skaicius5 = skaicius5 ^ skaicius6;
+
+console.log('sukeistas skaicius5 yra: ' + skaicius5 + ' sukeistas skaicius6 yra: ' + skaicius6);
+
+
+// 3. Rezultatą patalpinti į HTML dokumento div žymėje, kurios id="Rezultatas".
+
+document.getElementById("rezultatas").innerHTML += "skaicius5 yra: " +skaicius5 + " skaicius6 yra: " +skaicius6;
