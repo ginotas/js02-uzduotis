@@ -2,26 +2,34 @@
 
 console.log("hello hell");
 
-// 1. Suprogramuokite skriptą, kurioje parašius tam tikrą sekundžių kiekį, 
-// rodo  24 valandų, minučių, sekundžių formatu.
-
-/*  nesigauna ideti / paimti is html 
-function myFunction() {
-    document.getElementById("sekundesx").value;
-    document.getElementById("rezultatas").innerHTML = ("valandos: " + valandos + " minutes: " + minutes + " sekundes: " +sekundes);
-  }
- 
+/* 
+1. Suprogramuokite skriptą, kurioje parašius tam tikrą sekundžių kiekį, 
+ rodo  24 valandų, minučių, sekundžių formatu.
+    Sekundčių kiekis paimamas iš input HTML žymės laukelio.
+        Išveskite konvertuotą sekunžių informacija į div.
 */
+  
+function sekundesx() {
+   
+    var val, min, sec;
+    
+    var reiksme = document.getElementById("sekundesx").value;
 
+    if(reiksme > 86400) {
+        reiksme = 0;
+    }else if(reiksme < 0) {
+        reiksme = 0;
+    }else{
+        reiksme = reiksme;
+    }
+     
+    val = reiksme / 3600;
+    min = ((val - parseInt(val)) * 3600) / 60;
+    sec = (min - parseInt(min)) * 60;
+    
+    document.getElementById("rezultatas1").innerHTML = parseInt(val) + " (val) " + parseInt(min) + " (min) " + Math.round(sec) + " (sec)";
+    }
 
-
-let sekundesx = 1000;
-let valandos = Math.floor(sekundesx / 3600);
-sekundesx %= 3600;
-let minutes = Math.floor(sekundesx / 60);
-let sekundes = sekundesx % 60;
-
-console.log("valandos: " + valandos + " minutes: " + minutes + " sekundes: " +sekundes);
 
 
 
@@ -30,49 +38,35 @@ console.log("valandos: " + valandos + " minutes: " + minutes + " sekundes: " +se
 // Prieš tai atpažinti, 
 // ar tai yra triženklis skaičius, jei skaičius dviženklis ar n-ženklis, veiksmų nevykdyti 
 
-
-
-//skaiciuoja suma, o kodel - nzn :D
-
-var value = 999,
-    sum = 0;
+function trizenklis() {
     
-while (value) {
-    sum += value % 10;
-    value = Math.floor(value / 10);
+    var sk1, sk2, sk3;
+
+    var skaicius = document.getElementById("skaicius").value;
+
+    if(skaicius > 999) {
+        skaicius = 0;
+    } else if(skaicius < 100) {
+        skaicius = 0;
+    } else {
+        skaicius = skaicius;
+    }
+
+    sk1 = Math.floor(skaicius / 100);
+    sk2 = Math.floor((skaicius - (sk1*100)) / 10);
+    sk3 = skaicius - (sk1 * 100) - (sk2 * 10);
+
+    document.getElementById("rezultatas2").innerHTML = "skaiciu suma" + (sk1 + sk2 + sk3);
 }
 
-console.log("triju skaiciu suma: " + sum);
-
-// vidurki rasti kai skaiciuojama suma lengviau;
 
 
-var avg = 0;
-
-avg = sum / 3;
-
-console.log("triju skaiciu sumos vidurkis yra: " + avg);
-
-// sandauga... rytoj bandysiu
-
-
-
-
-// 3. Sukurkite  skriptą, kuris suranda kvadratinės lygties sprendimą.
 
 /*
-var a, b, c;
 
-a = 2;
-b =
-
-
-
-
-
+var numb = 123
+var numb1 = Math.floor(numb / 100);
+var numb2 = Math.floor((numb - (numb1 * 100)) / 10);
+var numb3 = numb - (numb1 * 100) - (numb2 * 10);
 
 */
-
-
-
-
