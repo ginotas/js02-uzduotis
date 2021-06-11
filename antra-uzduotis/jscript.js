@@ -56,7 +56,7 @@ function trizenklis() {
     sk2 = Math.floor((skaicius - (sk1*100)) / 10);
     sk3 = skaicius - (sk1 * 100) - (sk2 * 10);
 
-    document.getElementById("rezultatas2").innerHTML = "skaiciu suma" + (sk1 + sk2 + sk3);
+    document.getElementById("rezultatas2").innerHTML = "skaiciu suma yra: " + (sk1 + sk2 + sk3) + " skaiciu vidurkis yra: " + ((sk1 + sk2 + sk3) / 3) + " skaiciu sandauga yra: " + (sk1 * sk2 * sk3);
 }
 
 
